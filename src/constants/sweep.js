@@ -1,43 +1,26 @@
 const sidebar = [{
-  title: '游戏难度',
+  title: 'Difficulty',
   children: [{
     type: 'difficulty',
     mode: 'normal',
-    label: '普通 (Normal)'
+    label: 'Normal'
   },
   {
     type: 'difficulty',
     mode: 'hard',
-    label: '困难 (Hard)'
+    label: 'Hard'
   },
   {
     type: 'difficulty',
     mode: 'crazy',
-    label: '疯狂 (Crazy)'
-  },
-  {
-    type: 'difficulty',
-    mode: 'hell',
-    label: '?????(?????)'
-  }
-  ]
-},
-{
-  title: '自定义',
-  children: [{
-    type: 'userSet',
-    label: '棋盘大小 (Board)'
-  },
-  {
-    type: 'userSet',
-    label: '雷的数量 (Mine)'
+    label: 'Crazy'
   }
   ]
 }
 ];
 
 const buttonList = [{
-  label: '重新开始 (RESTART)',
+  label: 'RESTART',
   type: 'restart'
 }];
 

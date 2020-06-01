@@ -10,8 +10,7 @@
             class="paper"
             v-first="{name:'translateTop',duration:'0.5s',delay:'0.5s',offset:'0'}"
           >
-            <h3 class="sidebar_h3">扫雷</h3>
-            <h3 class="sidebar-title sidebar_h3">Mine Clearance</h3>
+            <h3 class="sidebar_h3">Fight against Coronavirus</h3>
             <div class="row">
               <div
                 class="collapsible full-width"
@@ -54,7 +53,7 @@
                 class="mine_tip"
                 v-first="{name:'translateTop',duration:'0.5s',delay:'0.9s',offset:'0'}"
               >
-                <span>{{`剩余 X ${theRestOfMine}`}}</span>
+                <span>{{`remain X ${theRestOfMine}`}}</span>
                 <img class="mine_img" src="../../assets/img/sweep/mineTransparent.png" alt />
               </div>
             </div>
@@ -130,9 +129,6 @@ export default {
         case "difficulty":
           this.pickDifficulty(item);
           break;
-        case "userSet":
-          this.userSetContext(item);
-          break;
       }
     },
 
@@ -196,7 +192,7 @@ export default {
           this.restartGame();
           this.HiAlert({
             type: "success",
-            content: "游戏已重置！"
+            content: "Restart game！"
           });
           break;
       }
@@ -437,7 +433,7 @@ export default {
       }
       this.HiAlert({
         type: "danger",
-        content: "游戏失败"
+        content: "Game Over!"
       });
       this.HiImg({ type: "fail" });
     },
@@ -578,7 +574,7 @@ export default {
       this.initBoard();
       this.HiAlert({
         type,
-        content: `难度已重置为${label}`
+        content: `The difficulty is ${label} now!`
       });
     },
 
